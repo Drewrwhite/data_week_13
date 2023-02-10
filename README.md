@@ -17,36 +17,42 @@
 
 ## Description:
 ### Set Up the Data
-* Read `coffee.csv` file into a Spark DataFrame.
-* All the columns are floats except for the 'Date' and 'Currency' columns.
+- [x] Read `coffee.csv` file into a Spark DataFrame.
+- [x] All the columns are floats except for the 'Date' and 'Currency' columns.
 
 ### Columns from Aggregate Functions
-* Add column `daily_diff` to the DataFrame where the values are the difference between 'Open' and 'Close'.
+- [x] Add column `daily_diff` to the DataFrame where the values are the difference between 'Open' and 'Close'.
 
-* Add column `high_low` to the DataFrame where the values are the difference between 'High' and 'Low'.
+- [x] Add column `high_low` to the DataFrame where the values are the difference between 'High' and 'Low'.
 
-* Add column`volume_100` to the DataFrame where the values are 'True' if the volume for that day was 100 or above, and otherwise 'False'.
+- [x] Add column`volume_100` to the DataFrame where the values are 'True' if the volume for that day was 100 or above, and otherwise 'False'.
 
-* Add column `abs_diff` that contains the absolute values of the numbers in that column.
+- [x] Add column `abs_diff` that contains the absolute values of the numbers in that column.
 
-* Compute a column `net_sales` which is the average of opening, high, low, and closing cost times the volume.
+- [x] Compute a column `net_sales` which is the average of opening, high, low, and closing cost times the volume.
 
 ### Stats
-* Find the average of the values in the column that has the absolute values of the difference between 'Open' and 'Close'.
+- [x] Find the average of the values in the column that has the absolute values of the difference between 'Open' and 'Close'.
 
-* Get the count of values where the 'Volume' was less than 100.
+- [x] Get the count of values where the 'Volume' was less than 100.
 
-* Find the average 'Open' value.
+- [x] Find the average 'Open' value.
 
-* Get the highest 'High' value.
+- [x] Get the highest 'High' value.
 
 ### Write File
-* Save your DataFrame (including the four added columns) to /data as a parquet file. Exclude the /data directory from Git.
+- [x] Save your DataFrame (including the four added columns) to /data as a parquet file. Exclude the /data directory from Git.
 
 
 _Net Sales:_  
 <img src="./images/net_sales.png"> 
 
+## Bonus
+
+:star: Use Matplotlib to create a visualization (i.e. a chart) using the coffee data.
+
+
+:star: Include code in the pipeline to write the Parquet file to BigQuery.
 
 <br>
 
